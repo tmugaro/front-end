@@ -1,0 +1,17 @@
+<h3>Create Team</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name of a Team</label>
+      <input type="text" class="form-control" id="teamName" required [(ngModel)]="team.teamName" name="teamName">
+    </div>
+
+       </div>
+
+    <button type="submit" class="btn btn-success">Save </button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You successfully entered a Team!</h4>
+</div>

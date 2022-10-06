@@ -1,0 +1,34 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Premier League Teams Log</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Team Name</th>
+        
+          <th>P</th>
+          <th>W</th>
+          <th>D</th>
+          <th>L</th>
+          <th>F</th>
+          <th>A</th>
+          <th>D</th>
+          <th>PTS</th>
+      
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let team of teams | async">
+          <td>{{team.teamName}}</td>
+          <td>{{team.points}}</td>
+          <td>{{team.resultOutCome}}</td>
+         
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
